@@ -1,6 +1,6 @@
 // const urls = require('./config/urls');
-const RECEIVE_API_BASE_URL = "http://localhost:8088/receive/"
-const REQUEST_API_BASE_URL = "http://localhost:8088/request/"
+const RECEIVE_API_BASE_URL = "http://54.145.243.128:8088/receive/"
+const REQUEST_API_BASE_URL = "http://54.145.243.128:8088/request/"
 
 function getStudentReceives(id, course){
     return axios.get(RECEIVE_API_BASE_URL+id+"/"+course);
