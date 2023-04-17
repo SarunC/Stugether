@@ -125,7 +125,7 @@
                     <i class="fa-solid fa-users"></i>&nbsp;&nbsp;Available Students
                 </div>
                 <div class="card-body overflow-auto" style="background-color: antiquewhite;">
-                    <div class="card text-bg-light mb-3" v-for="student in availableStudentList">
+                    <div class="card text-bg-light mb-3" v-for="student in availableStudentList.slice().reverse()">
                         <div class="card-header">
                             <i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;|&nbsp;{{'{{student.id}}'}} <i class="fa-solid fa-mars" style="color: #62DBFB;" v-if="student.fullname.indexOf('นาย')>=0"></i><i class="fa-solid fa-venus" style="color: #FE7AB6" v-else></i> | {{'{{student.fullname}}'}}
                             <div class="rightBtn-Container" v-if="student.id != userID">
