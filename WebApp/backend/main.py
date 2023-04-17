@@ -8,12 +8,12 @@ import datetime
 app = FastAPI()
 
 origins = [
-    "http://localhost:8080",
-    "http://localhost:8088",
-    "http://localhost:8000",
-    "http://localhost:8081",
-    "http://localhost:5000",
-    "http://localhost:3000",
+    "http://54.145.243.128:8080",
+    "http://54.145.243.128:8088",
+    "http://54.145.243.128:8000",
+    "http://54.145.243.128:8081",
+    "http://54.145.243.128:5000",
+    "http://54.145.243.128:3000",
 ]
 
 app.add_middleware(
