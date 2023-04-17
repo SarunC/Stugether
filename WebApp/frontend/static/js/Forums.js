@@ -1,6 +1,6 @@
 // import urls from './Config.js';
-const FORUM_API_BASE_URL = "http://localhost:8088/forum/"
-const FORUMS_API_BASE_URL = "http://localhost:8088/forums/"
+const FORUM_API_BASE_URL = "http://54.145.243.128:8088/forum/"
+const FORUMS_API_BASE_URL = "http://54.145.243.128:8088/forums/"
 
 function createForum(forumInfo){
     return axios.post(FORUM_API_BASE_URL+"create", forumInfo);
